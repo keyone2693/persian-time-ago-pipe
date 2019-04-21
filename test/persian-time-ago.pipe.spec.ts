@@ -27,7 +27,7 @@ describe('persian-time-ago-pipe', () => {
 		clock.restore();
 	});
 	describe('output tests', function () {
-		let pipe = new TimeAgoPipe(null, new NgZoneMock() as NgZone);
+		let pipe = new PersianTimeAgoPipe(null, new NgZoneMock() as NgZone);
 		it('\'چند ثانیه قبل\' tests', () => {
 			var pastDate = new Date();
 			for (let i =0; i < 45; i++){

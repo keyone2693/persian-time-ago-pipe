@@ -1,6 +1,6 @@
 {
   "name": "persian-time-ago-pipe",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A really simple, lightweight Angular pipe for converting a date string into a persian time ago",
   "scripts": {
     "build": "ng-packagr -p package.json",

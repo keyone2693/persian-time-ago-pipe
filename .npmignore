@@ -1,0 +1,9 @@
+test
+node_modules
+.gitignore
+.npmignore
+.travis.yml
+tsconfig.json
+.idea
+**/*.iml
+/compiled

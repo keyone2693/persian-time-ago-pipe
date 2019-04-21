@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+persian-time-ago-pipe.iml
+node_modules
+**/*.d.ts
+**/*.js
+**/*.js.map
+/dist
+*.metadata.json

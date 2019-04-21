@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 import { NgZone } from '@angular/core';
-import { PersianTimeAgoPipe } from "../persian-time-ago.pipe";
+import { PersianTimeAgoPipe } from '../persian-time-ago.pipe';
 
 class NgZoneMock {
 	runOutsideAngular(fn: Function) {

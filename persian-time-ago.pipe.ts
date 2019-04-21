@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform, NgZone, ChangeDetectorRef, OnDestroy } from "@angular/core";
+import { Pipe, PipeTransform, NgZone, ChangeDetectorRef, OnDestroy } from '@angular/core';
 @Pipe({
     name: 'persianTimeAgo',
     pure: false

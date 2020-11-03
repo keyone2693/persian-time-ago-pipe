@@ -26,13 +26,12 @@ It can be imported into your angular project, as you would for any other library
 
 In the @NgModule you want to use it in
 ```
-import {PersianTimeAgoPipe} from 'persian-time-ago-pipe';
+import { PersianTimeAgoModule } from 'persian-time-ago-pipe';
 ```
 add "PersianTimeAgoPipe" to your declarations
 ```
 @NgModule({
-	imports: [... etc ...],
-	declarations: [..., PersianTimeAgoPipe, ... ]
+	imports: [... ,PersianTimeAgoModule , ...]
 })
 ```
 ---
@@ -41,6 +40,12 @@ In your component templates you can just do:
 ```
 <span>{{your_date | persianTimeAgo}}</span>
 ```
-where "your_date" is a local date string, which could be parsed by the standard Js Date()
+where "your_date" is a local date as a "string", which could be parsed by the standard Js Date()
+```
+//in component
+_dt = new Date();
+//in html
+<span>{{_dt.toString() | persianTimeAgo}}</span>
+```
 
 If this value is null or not parsable as a date, then the pipe will display nothing

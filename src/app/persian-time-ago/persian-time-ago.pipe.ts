@@ -4,7 +4,7 @@ import { Pipe, PipeTransform, NgZone, ChangeDetectorRef, OnDestroy } from '@angu
     pure: false
 })
 export class PersianTimeAgoPipe implements PipeTransform, OnDestroy {
-    private timer: number;
+    private timer: number | null;
     constructor(private changeDetectorRef: ChangeDetectorRef, private ngZone: NgZone) { }
     transform(value: string) {
         this.removeTimer();

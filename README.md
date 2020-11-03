@@ -3,6 +3,10 @@
 
 
 A really simple, lightweight Angular pipe for converting a date string into a time ago
+
+## version
+angular 5+
+and
 now working with ivy and Angualr 9+ no problem :)
 
 |Time Range|Output|

@@ -11,7 +11,7 @@ export class PersianTimeAgoPipe implements PipeTransform, OnDestroy {
         const d = new Date(value);
         const now = new Date();
         const seconds = Math.round(Math.abs((now.getTime() - d.getTime()) / 1000));
-        const timeToUpdate = (Number.isNaN(seconds)) ? 1000 : this.getSecondsUntilUpdate(seconds) * 1000;
+        const timeToUpdate = (isNaN(seconds)) ? 1000 : this.getSecondsUntilUpdate(seconds) * 1000;
         this.timer = this.ngZone.runOutsideAngular(() => {
             if (typeof window !== 'undefined') {
                 return window.setTimeout(() => {
@@ -25,7 +25,7 @@ export class PersianTimeAgoPipe implements PipeTransform, OnDestroy {
         const days = Math.round(Math.abs(hours / 24));
         const months = Math.round(Math.abs(days / 30.416));
         const years = Math.round(Math.abs(days / 365));
-        if (Number.isNaN(seconds)) {
+        if (isNaN(seconds)) {
             return '';
         } else if (seconds <= 45) {
             return 'چند ثانیه قبل';

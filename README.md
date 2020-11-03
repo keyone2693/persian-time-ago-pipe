@@ -13,7 +13,7 @@ A really simple, lightweight Angular pipe for converting a date string into a ti
 |90 minutes - 22 hours      | X ساعت پیش           |
 |22 - 36 hours              | روزی پیش              |
 |36 hours - 25 days         | X روز پیش             |
-|25 - 45 days               | a یک ماه پیش            |
+|25 - 45 days               | یک ماه پیش            |
 |45 - 345 days              | X ماه پیش           |
 |345 - 545 days (1.5 years) | یک سال پیش            |
 |546 days+                  | X سال پیش            |
